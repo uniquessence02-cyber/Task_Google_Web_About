@@ -1,0 +1,45 @@
+<div id="purchase-drawer-overlay" class="purchase-drawer-overlay"></div>
+<div id="purchase-drawer" class="purchase-drawer">
+    <div class="purchase-drawer-header">
+        <h2 id="drawer-product-name">Buy Now</h2>
+        <button id="close-drawer" class="btn-icon">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    </div>
+    <div class="purchase-drawer-body">
+        <form id="purchase-form" class="flex flex-col gap-m">
+            <div class="form-group">
+                <label for="buy-name">Full Name</label>
+                <input type="text" id="buy-name" name="name" class="input-field" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="buy-email">Mail ID</label>
+                <input type="email" id="buy-email" name="email" class="input-field" placeholder="john@example.com"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="buy-phone">Phone Number</label>
+                <input type="tel" id="buy-phone" name="phone" class="input-field" placeholder="+1 (555) 000-0000"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="buy-address">Address</label>
+                <textarea id="buy-address" name="address" class="input-field" style="height: 100px; padding-top: 12px;"
+                    placeholder="Complete Address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="buy-designation">Designation</label>
+                <input type="text" id="buy-designation" name="designation" class="input-field"
+                    placeholder="e.g. CTO, Developer" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top: var(--space-s);">Complete Purchase</button>
+        </form>
+        <div id="purchase-success" class="hidden text-center py-xl">
+            <span class="material-symbols-outlined"
+                style="font-size: 64px; color: var(--color-green); margin-bottom: var(--space-m);">check_circle</span>
+            <h3>Order Received!</h3>
+            <p class="text-secondary mt-s">Our team will contact you shortly to finalize the setup.</p>
+            <button id="success-close" class="btn btn-outline" style="margin-top: var(--space-m);">Close</button>
+        </div>
+    </div>
+</div>
